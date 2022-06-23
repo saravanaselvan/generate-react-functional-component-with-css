@@ -3,6 +3,7 @@
   "displayName": "Generate React Functional Component with CSS",
   "description": "Extension to create React Functional component with CSS file",
   "version": "0.0.1",
+  "publisher": "Saravanaselvan",
   "repository": {
     "type": "git",
     "url": "https://github.com/saravanaselvan/generate-react-functional-component-with-css.git"
