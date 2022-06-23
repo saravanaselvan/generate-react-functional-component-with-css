@@ -1,0 +1,48 @@
+{
+  "name": "generate-react-functional-component-with-css",
+  "displayName": "Generate React Functional Component with CSS",
+  "description": "Extension to create React Functional component with CSS file",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.56.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:generate-react-functional-component-with-css.createComponent"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "generate-react-functional-component-with-css.createComponent",
+        "title": "Create React Component with CSS"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "generate-react-functional-component-with-css.createComponent",
+          "title": "Create React Component with CSS"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.56.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "eslint": "^8.16.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.2",
+    "@vscode/test-electron": "^2.1.3"
+  }
+}
